@@ -4,8 +4,32 @@
 <meta charset="utf-8"/>
 <title>SFCV : Spécialiste Français n°1 des Caves à Vin</title>
 <link rel="stylesheet" href="style.css" type="text/css">
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+ 
+
+</script>
 </head>
+
 <body>
+
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Accueil</a>
+  <a href="produits.html">Produits</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+  <a href="mentions.html">mentions</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+
 <div id="entete"><!--<!TODO1>-->
   <img 
      src="images/logo.png"class="imageflottante"
@@ -14,14 +38,7 @@
   <h3>N° 1 des caves à vin</h3>
   </div>
 <hr>
-<div id="menu"><!--<!TODO2>-->
-  <ul>
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="produits.html">Produits</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  </div>
+
       <header>
       </header>
       <hr>
@@ -68,7 +85,7 @@ E-mail :</label><input type="email" name="email" id="email" />
        <input type="text" name="codepostal" id="codepostal" />
        </fieldset>
        <p>
-       <input type="checkbox" name="newslettre" id="newslettre" /> <label for="newslettre">je veux recevoir la newlettre</label><br />
+       <input type="checkbox" name="newslettre" id="newslettre" /> <label for="newslettre">je veux recevoir la newsletter</label><br />
       </p>
        <input type="submit" value="Envoyer" />
        <INPUT TYPE=RESET VALUE=Effacer>
